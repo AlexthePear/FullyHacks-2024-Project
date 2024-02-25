@@ -54,8 +54,9 @@
     background-image: url(https://66.media.tumblr.com/2e4d4afa81aec4f235992d3b00dea57f/tumblr_mqq8pwRzOp1rfjowdo1_500.gif);
       background-size: cover;
       object-fit: cover;
-        min-width: 50vw;
-        min-height: 20vh;
+        min-width: 500px;
+        min-height: 200px;
+        margin-bottom: 14px;
         display: flex;
         flex: center;
         text-align: center;
