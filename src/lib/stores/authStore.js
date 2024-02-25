@@ -17,13 +17,13 @@ export const authHandlers = {
 	resetPassword: async (email) => {
 		await sendPasswordResetEmail(auth, email);
 	},
-    updateEmail: async (email) => { 
-        await updateEmail(auth.currentUser, email);
-    },
-    updatePassword: async (password) => {
-        await updatePassword(auth.currentUser, password);
-    },
-    login: async (email, password) => {
-        await signInWithEmailAndPassword(auth, email, password);
-    }
+	updateEmail: async (email) => {
+		await updateEmail(auth.currentUser, email);
+	},
+	updatePassword: async (password) => {
+		await updatePassword(auth.currentUser, password);
+	},
+	login: async (email, password) => {
+		await signInWithEmailAndPassword(auth, email, password);
+	}
 };
