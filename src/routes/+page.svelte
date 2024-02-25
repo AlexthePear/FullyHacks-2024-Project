@@ -118,6 +118,12 @@
         padding: 5px;
 
     }
+    .theme_outside_one{
+        background-image: url(https://i.imgur.com/jlC48sU.gif);
+        background-size: cover;
+        object-fit: cover;
+    }
+
 
     .theme_outside_two{
         background-image: url(https://64.media.tumblr.com/78f8e0b2c0a4da234fa60306392f3ed4/cacdd37170f09608-a5/s540x810/abae3cfaa522eb8a7a33c1006fd2b7f0ddb46d3d.gif);
