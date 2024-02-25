@@ -13,4 +13,12 @@
 	});
 </script>
 
-<slot />
+<!-- THIS IS NAV BAR TODO: FILL WITH CONTENT AND STYLE -->
+<nav>
+
+
+</nav>
+
+<slot></slot>
+
+
