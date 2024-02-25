@@ -1,17 +1,30 @@
 <script>
-    import Ranking from "./ranking.svelte";
+    import Ranking from "./themes.svelte";
     export let data = ["","",""];
 </script>
 
-<div class="top_10">
-<Ranking place={"1"} name={"place_holder"}/>
-<Ranking place={"2"} name={"place_holder"}/>
-<Ranking place={"3"} name={"place_holder"}/>
-<Ranking place={"4"} name={"place_holder"}/>
-<Ranking place={"5"} name={"place_holder"}/>
-<Ranking place={"6"} name={"place_holder"}/>
-<Ranking place={"7"} name={"place_holder"}/>
-<Ranking place={"8"} name={"place_holder"}/>
-<Ranking place={"9"} name={"place_holder"}/>
-<Ranking place={"10"} name={"place_holder"}/>
+<div class=themes>
+    <div class="theme_1">
+        <div class="theme_content_1">
+            <h1>theme one</h1>
+        </div>
+    </div>
+    
+    <div class="theme_2">
+        <div class="theme_content_2"></div>
+    </div>
+
+    <div class="theme_3">
+        <div class="theme_content_3"></div>
+    </div>  
 </div>
+
+<style>
+
+.themes{
+    display: flex;
+    flex-direction: column;
+}
+
+
+</style>

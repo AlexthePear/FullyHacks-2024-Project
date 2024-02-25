@@ -30,9 +30,8 @@
 
 </script>
 
-<h1 class="title teal_glow">Sign Up</h1>
-
-<h2 class="sub_title teal_glow">welcome to rate my openings </h2>
+<h1 class="sub_title teal_neon_text"> don't have an account?</h1>
+<h1 class="title teal_neon_text">Sign Up</h1>
 
 <form on:submit|preventDefault={signup}>
 	<input type="text" class="user_input" bind:value={email} placeholder="Email" required />
@@ -62,7 +61,7 @@
 		margin-bottom: 40px;
 	}
 
-	.teal_glow{
+	.teal_neon_text{
 		color: white;
         text-shadow: 0 0 10px teal,
         0 0 20px teal,
