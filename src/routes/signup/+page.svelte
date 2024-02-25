@@ -5,9 +5,14 @@
 	let email = '';
 	let password = '';
 
-	function signup() {
-		authHandlers.signup(email, password);
-		authHandlers.login(email, password);
+	async function signup() {
+		try {
+			await authHandlers.signup(email, password);
+			await authHandlers.login(email, password);
+		} catch (error) {
+			console.error(error);
+		}
+		window.href.location = '/profile';
 	}
 </script>
 

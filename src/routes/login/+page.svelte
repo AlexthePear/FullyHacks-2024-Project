@@ -1,13 +1,17 @@
 <script>
-	// import { authStore } from '../../stores/authStore.js';
+	import { authStore } from '../../lib/stores/authStore.js';
 	import { authHandlers } from '../../lib/stores/authStore.js';
 
 	let email = '';
 	let password = '';
 
-	function login() {
-		authHandlers.login(email, password);
-		window.location.href = '/';
+	async function login() {
+		try {
+			await authHandlers.login(email, password);
+		} catch (error) {
+			console.error(error);
+		}
+		// window.location.href = '/';
 	}
 
 	//TODO: Add function to check if user already logged in and redirect to home page
@@ -19,3 +23,4 @@
 	<input type="password" name="password" bind:value={password} placeholder="Password" required />
 	<button type="submit">Login</button>
 </form>
+
