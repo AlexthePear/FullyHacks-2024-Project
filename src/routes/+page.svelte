@@ -33,6 +33,7 @@
 		background: black;
 	}
 	.main_header{
+        margin-top: 40px;
 		font-size: 50px;
 		font-family: 'Courier New', Courier, monospace;
 		padding: 20px 10px;
