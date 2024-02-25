@@ -14,10 +14,14 @@
 </script>
 
 <!-- THIS IS NAV BAR TODO: FILL WITH CONTENT AND STYLE -->
-<!-- <nav class="navbar">
+<nav class="navbar">
+    <a href="/">Home</a>
+    <input type="text" placeholder="Search..">
+    <button on:click={profile}></button>
 
+</nav>
 
-</nav> -->
+<div class="nav_pusher"></div>
 
 <slot></slot>
 
@@ -28,10 +32,13 @@
       left: 0;
       height: 50px;
       width: 100%;
-      background-color: #333;
+      background-color: #140420;
       color: white;
       padding: 10px;
       z-index: 100;
+    }
+    .nav_pusher{
+        height: 50px;
     }
   </style>
 
