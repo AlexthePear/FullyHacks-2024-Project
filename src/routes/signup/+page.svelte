@@ -23,9 +23,7 @@
 <form on:submit|preventDefault={signup}>
 	<input type="text" class="user_input" bind:value={email} placeholder="Email" required />
 	<input type="password" class="user_input" bind:value={password} placeholder="Password" required />
-	<a href="http://localhost:5176/">
 	<button type="submit" class="login">Sign Up</button>
-</a>
 </form>
 
 <style>
