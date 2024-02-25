@@ -6,6 +6,7 @@ import { getAnalytics } from 'firebase/analytics';
 
 // import auth from 'firebase/auth';
 import { getAuth, setPersistence, inMemoryPersistence } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -30,3 +31,4 @@ if (!getApps().length) {
 }
 
 export const auth = getAuth(firebaseApp);
+export const db = getFirestore(firebaseApp);

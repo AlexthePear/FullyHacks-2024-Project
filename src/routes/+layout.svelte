@@ -16,8 +16,8 @@
 <!-- THIS IS NAV BAR TODO: FILL WITH CONTENT AND STYLE -->
 <nav class="navbar">
     <a href="/">Home</a>
-    <input type="text" placeholder="Search..">
-    <button on:click={profile}></button>
+    <a href="/search">Search</a>
+    <a href="/profile">Profile</a>  
 
 </nav>
 
@@ -38,7 +38,7 @@
       z-index: 100;
     }
     .nav_pusher{
-        height: 50px;
+        height: 70px;
     }
   </style>
 

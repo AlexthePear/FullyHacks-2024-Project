@@ -9,6 +9,11 @@
 			console.error(error);
 		}
 	}
+	$: {
+		if($authStore.currentUser == null) {
+			window.location.href = "/login"
+		}
+	}
 </script>
 
 <h1>Profile</h1>
