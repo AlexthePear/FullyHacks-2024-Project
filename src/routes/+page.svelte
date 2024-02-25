@@ -7,9 +7,15 @@
 
 <h2 class="sub_header pink_neon_text">come rate your favorites</h2>
 
+<div class="featured-container">
 <div class=themes>
-    <img src="https://i.imgur.com/jlC48sU.gif" class="theme_outside" alt="zoro" /> 
+    <div class="theme_outside theme_outside_one">
+        <div class="theme_inside pink_neon_text">
+            <h1>theme: One Piece</h1>
+        </div>
+    </div>
     
+
     <div class="theme_outside theme_outside_two">
         <div class="theme_inside pink_neon_text">
            <h1>theme: A.O.T</h1>
@@ -22,9 +28,17 @@
         </div>
     </div>  
 </div>
+</div>
 
 
 <style>
+    .featured-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
 	:global(body) {
 		background: black;
 	}
@@ -71,7 +85,9 @@
     .themes{
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 600px;
+    height: 100px;
+    align-self: center;
 }
 
     .theme_outside{
@@ -82,7 +98,7 @@
         align-self: center;
         margin: 25px;
         width: calc(100%);
-        height: 25vh;
+        height: 30vh;
         border-radius: 2px;
         box-shadow: 0px 0px 30px 4px #eb21b6;
         border: 1px solid white;
@@ -101,12 +117,6 @@
         max-width: 300px;
         padding: 5px;
 
-    }
-
-    .theme_outside_one{
-        background-image: url(https://i.imgur.com/jlC48sU.gif);
-        background-size: cover;
-        object-fit: cover;
     }
 
     .theme_outside_two{
