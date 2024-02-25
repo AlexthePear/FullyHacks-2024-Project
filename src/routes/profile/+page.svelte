@@ -4,14 +4,14 @@
 	async function logout() {
 		try {
 			await authHandlers.logout();
-			window.href.location = '/';
+			window.location.href = '/';
 		} catch (error) {
 			console.error(error);
 		}
 	}
 	$: {
 		if($authStore.currentUser == null) {
-			window.location.href = "/login"
+			// window.href.location = "/login"
 		}
 	}
 </script>

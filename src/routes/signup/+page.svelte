@@ -20,7 +20,7 @@
 		}
 	}
 	onMount(() => {
-		unsubscribe = authStore.subscribe($authStore => {
+		let unsubscribe = authStore.subscribe($authStore => {
       	if ($authStore.currentUser) {
         	console.log('user already logged in');
         	window.location.href = '/profile';

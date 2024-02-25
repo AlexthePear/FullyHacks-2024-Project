@@ -1,12 +1,13 @@
 <script>
 	import { authStore } from '../../lib/stores/authStore.js';
-
+	import { authHandlers } from '../../lib/stores/authStore.js';
 	let email = '';
 	let password = '';
 
 	async function login() {
 		try {
 			await authHandlers.login(email, password);
+			window.location.href = '/profile';
 		} catch (error) {
 			console.error(error);
 		}

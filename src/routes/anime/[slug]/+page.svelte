@@ -4,10 +4,10 @@
 
     let slug;
     $: slug = $page.params.slug
-    
-    let api_url = `https://api.animethemes.moe/anime/${slug}?include=animethemes.animethemeentries`;
+                    
+    let api_url = `https://api.animethemes.moe/anime/${slug}?include=animethemes.song`;
 
-    $: api_url = `https://api.animethemes.moe/anime/${slug}?include=animethemes.animethemeentries`
+    $: api_url = `https://api.animethemes.moe/anime/${slug}?include=animethemes.song`
 
     let data = null;
     async function run() {
@@ -34,12 +34,10 @@
     <h1>{data.anime.name}</h1>
     <p>{@html data.anime.synopsis}</p>
     <h2>Themes</h2>
-    <!-- {#each data.anime.themes as theme}
-        <h3>{theme.type}</h3>
-        <h4>{theme.entries[0].title}</h4>
-        <audio controls>
-            <source src={theme.entries[0].mirror.mirror_url} type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    {/each} -->
+    {#each data.anime.animethemes as theme}
+        <a href={`/anime/${slug}/${theme.id}`}>
+        <h3>{theme.slug}</h3>
+        <h4>{theme.song.title}</h4>
+        </a>    
+    {/each}
 {/if }
