@@ -15,30 +15,52 @@
 
 <!-- THIS IS NAV BAR TODO: FILL WITH CONTENT AND STYLE -->
 <nav class="navbar">
-    <a href="/">Home</a>
-    <a href="/search">Search</a>
-    <a href="/profile">Profile</a>  
+    <a class="home pink_neon_text" href="/">Home</a>
+    <a class="search pink_neon_text" href="/search">Search</a>
+    <a class="profile pink_neon_text" href="/profile">Profile</a>  
 
 </nav>
 
-<div class="nav_pusher"></div>
+<div class="nav_pusher">
+</div>
 
 <slot></slot>
 
 <style>
+
     .navbar {
-    position: fixed;
-      top: 0;
-      left: 0;
-      height: 50px;
-      width: 100%;
-      background-color: #140420;
-      color: white;
-      padding: 10px;
-      z-index: 100;
+    justify-content: space-around;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #140420;
+    padding: 10px;
+    z-index: 100px;
+    border-color: white;
     }
+
+    .home{
+      color: white;
+      padding-right: 20vw;
+    }
+
+    .search{
+      color: white;
+      padding-right: 20vw;
+
+    }
+  .profile{
+    color:white;
+  }
+
     .nav_pusher{
         height: 70px;
+        color: white;
     }
   </style>
 

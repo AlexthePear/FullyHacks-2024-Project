@@ -26,8 +26,11 @@
     
 </script>
 
-<form on:submit={handleSumbit}>
-    <input type="text" name="q" placeholder="search" bind:value={search_query}/>
+<form class="form" on:submit={handleSumbit}>
+    <h2 class="intro blue_neon_text"> welcome to our search page</h2>
+    <h2 class="intro_two blue_neon_text ">seach for your anime!</h2>
+    <div class="totoro"></div>
+    <input type="text" name="q" placeholder="search" class="search_bar" bind:value={search_query}/>
     <input type="submit" hidden />
 </form>
 
@@ -39,4 +42,53 @@
         </div>
     {/each}
 {/if}
+
+<style>
+    .form{
+        display: flex;
+        flex: center;
+        flex-direction: column;
+    }
+
+    .totoro{
+    background-image: url(https://66.media.tumblr.com/2e4d4afa81aec4f235992d3b00dea57f/tumblr_mqq8pwRzOp1rfjowdo1_500.gif);
+      background-size: cover;
+      object-fit: cover;
+        min-width: 50vw;
+        min-height: 20vh;
+        display: flex;
+        flex: center;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .search_bar{
+        background-color: white;
+        font-size: 50px;
+        display: center;
+        flex: center;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        border-radius: 5px;
+        box-shadow: 0px 0px 30px 4px #32a1c6;
+    }
+
+
+
+    .intro{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 15px;
+    }
+
+    .intro_two{
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+</style>
 

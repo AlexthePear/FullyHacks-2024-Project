@@ -9,20 +9,20 @@
 
 <div class=themes>
     <div class="theme_outside theme_outside_one">
-        <div class="theme_inside">
-            <h1>theme one</h1>
+        <div class="theme_inside pink_neon_text">
+            <h1>theme: One Piece</h1>
         </div>
     </div>
     
     <div class="theme_outside theme_outside_two">
-        <div class="theme_inside">
-           <h1>theme two</h1>
+        <div class="theme_inside pink_neon_text">
+           <h1>theme: A.O.T</h1>
         </div>
     </div>
 
     <div class="theme_outside theme_outside_three">
-        <div class="theme_inside">
-            <h1>theme three</h1>
+        <div class="theme_inside pink_neon_text">
+            <h1>theme: Naruto</h1>
         </div>
     </div>  
 </div>
