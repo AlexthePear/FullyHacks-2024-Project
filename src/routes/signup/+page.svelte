@@ -16,14 +16,14 @@
 			error_string = error.message;
 		}
 		if (error_string == '') {
-			window.location.href = '/profile';
+			// window.location.href = '/profile';
 		}
 	}
 	onMount(() => {
 		let unsubscribe = authStore.subscribe($authStore => {
       	if ($authStore.currentUser) {
         	console.log('user already logged in');
-        	window.location.href = '/profile';
+        	// window.location.href = '/profile';
       	}
     });
 	});

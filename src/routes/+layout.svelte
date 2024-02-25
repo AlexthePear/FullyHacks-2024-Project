@@ -27,7 +27,9 @@
 <slot></slot>
 
 <style>
-
+    :global(h1, h2, p){
+      color : white;  
+    }
     .navbar {
     justify-content: space-around;
     font-size: 30px;

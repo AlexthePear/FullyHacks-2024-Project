@@ -37,12 +37,12 @@
 
     async function rateTheme(op_id, value) {
         if ($authStore.currentUser) {
-            docRef = doc(collection(db, "Users"), $authStore.currentUser.uid);
+            let docRef = doc(db, "Users", $authStore.currentUser.uid);
+            await setDoc(docRef, {
+                [op_id]: value
+            }, { merge: true });    
         }
 
-        await setDoc(docRef, {
-            [op_id]: value
-        }, { merge: true });
     }
 
 </script>
@@ -64,6 +64,10 @@
         <input type="number" bind:value={rating} min="1" max="10" step="1" />
         <input type="submit" value="Submit" /> 
     </form>
+
+    <h2>
+        Rating :    
+    </h2>
 {/if }
 
 

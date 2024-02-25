@@ -8,11 +8,7 @@
 <h2 class="sub_header pink_neon_text">come rate your favorites</h2>
 
 <div class=themes>
-    <div class="theme_outside theme_outside_one">
-        <div class="theme_inside pink_neon_text">
-            <h1>theme: One Piece</h1>
-        </div>
-    </div>
+    <img src="https://i.imgur.com/jlC48sU.gif" class="theme_outside" alt="zoro" /> 
     
     <div class="theme_outside theme_outside_two">
         <div class="theme_inside pink_neon_text">
@@ -75,6 +71,7 @@
     .themes{
     display: flex;
     flex-direction: column;
+    width: 60vw;
 }
 
     .theme_outside{
@@ -84,7 +81,7 @@
         justify-content: center;
         align-self: center;
         margin: 25px;
-        width: 70vw;
+        width: calc(100%);
         height: 25vh;
         border-radius: 2px;
         box-shadow: 0px 0px 30px 4px #eb21b6;

@@ -14,6 +14,8 @@
 			// window.href.location = "/login"
 		}
 	}
+
+	
 </script>
 
 <h1>Profile</h1>
