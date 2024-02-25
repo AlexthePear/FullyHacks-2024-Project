@@ -1,5 +1,6 @@
 <script>
-	// import { authStore } from '../../stores/authStore.js';
+	import { onMount } from 'svelte';
+	import { authStore } from '../../lib/stores/authStore.js';
 	import { authHandlers } from '../../lib/stores/authStore.js';
 
 	let email = '';
@@ -18,6 +19,14 @@
 			window.location.href = '/profile';
 		}
 	}
+	onMount(() => {
+		unsubscribe = authStore.subscribe($authStore => {
+      	if ($authStore.currentUser) {
+        	console.log('user already logged in');
+        	window.location.href = '/profile';
+      	}
+    });
+	});
 
 </script>
 
