@@ -14,11 +14,24 @@
 </script>
 
 <!-- THIS IS NAV BAR TODO: FILL WITH CONTENT AND STYLE -->
-<nav>
+<!-- <nav class="navbar">
 
 
-</nav>
+</nav> -->
 
 <slot></slot>
 
+<style>
+    .navbar {
+    position: fixed;
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      z-index: 100;
+    }
+  </style>
 

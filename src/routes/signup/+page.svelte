@@ -4,16 +4,21 @@
 
 	let email = '';
 	let password = '';
-
+	let error_string = '';
 	async function signup() {
 		try {
 			await authHandlers.signup(email, password);
 			await authHandlers.login(email, password);
+			error_string = '';
 		} catch (error) {
 			console.error(error);
+			error_string = error.message;
 		}
-		window.location.href = '/profile';
+		if (error_string == '') {
+			window.location.href = '/profile';
+		}
 	}
+
 </script>
 
 <h1 class="title teal_glow">Sign Up</h1>
@@ -23,9 +28,10 @@
 <form on:submit|preventDefault={signup}>
 	<input type="text" class="user_input" bind:value={email} placeholder="Email" required />
 	<input type="password" class="user_input" bind:value={password} placeholder="Password" required />
-	<a href="http://localhost:5176/">
 	<button type="submit" class="login">Sign Up</button>
-</a>
+	{#if error_string != ''}
+		<p class="teal_glow">Invalid Input</p>
+	{/if}
 </form>
 
 <style>
