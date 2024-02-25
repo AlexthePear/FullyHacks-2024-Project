@@ -6,7 +6,6 @@
 
 <h2 class="sub_header pink_neon_text">come rate your favorites</h2>
 
-<div class="anime_gif"></div>
 
 <Top_10/>
 
@@ -53,9 +52,4 @@
         0 0 400px #32a1c6;
     }
 
-    .anime_gif{
-        width: 300px;
-        height: 500px;
-        background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F1829656092547700%2F&psig=AOvVaw34rkOodjutn7ROLWtVXDaY&ust=1708930047414000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjq5tnyxYQDFQAAAAAdAAAAABAJ);
-    }
 </style>
