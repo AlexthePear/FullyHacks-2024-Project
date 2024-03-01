@@ -31,6 +31,7 @@
       color : white;  
     }
     .navbar {
+      position: fixed;
     justify-content: space-around;
     font-size: 30px;
     text-align: center;

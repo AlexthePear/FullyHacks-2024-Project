@@ -37,13 +37,19 @@
 
 {#if data != null}
     {#each data.search.anime as anime}
-        <div>
+        <div class="search-container">
             <AnimeTitle anime={anime} />    
         </div>
     {/each}
 {/if}
 
 <style>
+    .search-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }   
     .form{
         display: flex;
         flex: center;
@@ -65,6 +71,7 @@
     }
 
     .search_bar{
+        margin-bottom: 20px;
         background-color: white;
         font-size: 50px;
         display: center;

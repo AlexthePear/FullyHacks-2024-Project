@@ -50,13 +50,15 @@
 {#if data == null}
     <h1>Loading...</h1>
 {:else}
-    <h1>{data.animetheme.anime.name}</h1>
-    <h2>{data.animetheme.song.title}</h2>
+    <h1 class="pink_neon_text">{data.animetheme.anime.name}</h1>
+    <h2 class="blue_neon_text">{data.animetheme.slug} {data.animetheme.song.title}</h2>
     <h2>Entries</h2>
     {#each data.animetheme.animethemeentries as entry}
+    <div class="entry-container">
         <h3>Version {entry.version}</h3>
         <episodes>Episodes: {entry.episodes}</episodes>
         <iframe src={entry.videos[0].link} frameborder="0" title={data.animetheme.song.title} allowfullscreen></iframe>
+    </div>
     {/each}
 
     <h2> Rate this theme</h2>
@@ -70,4 +72,29 @@
     </h2>
 {/if }
 
-
+<style>
+    h3, episodes {
+        color: white;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .entry-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    iframe {
+        box-shadow: 0px 0px 30px 4px #eb21b6;
+        width: 60%;
+        height: 300px;
+    }
+    episodes {
+        margin-right: 5px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+</style>
